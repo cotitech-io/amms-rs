@@ -45,7 +45,7 @@ pub const SYNC_EVENT_SIGNATURE: H256 = H256([
     199, 139, 229, 14, 6, 43, 3, 169, 255, 251, 186, 209,
 ]);
 
-#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, Copy)]
 pub struct UniswapV2Pool {
     pub address: H160,
     pub token_a: H160,
